@@ -1,0 +1,66 @@
+# Netlify Configuration for Nur Wellness Co.
+# This file configures deployment settings for Netlify
+
+[build]
+  # No build command needed - pure HTML/CSS/JS
+  publish = "."
+  
+[build.environment]
+  # Environment variables (none needed for static site)
+  
+[[redirects]]
+  # Redirect all 404s to index.html (for SPA-like behavior)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
+[[headers]]
+  # Security headers for all pages
+  for = "/*"
+  [headers.values]
+    # Prevent clickjacking
+    X-Frame-Options = "DENY"
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+    # Enable XSS protection
+    X-XSS-Protection = "1; mode=block"
+    # Referrer policy
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Content Security Policy (adjust as needed)
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self';"
+
+[[headers]]
+  # Cache static assets for 1 year
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # Cache images for 1 month
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Custom domain configuration (update with your domain)
+# [build.environment]
+#   CUSTOM_DOMAIN = "nurwellness.com"
+
+# Form submission handling (if you add contact forms later)
+# [[plugins]]
+#   package = "@netlify/plugin-forms"
+

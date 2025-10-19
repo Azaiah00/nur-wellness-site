@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nur Wellness Co. offers natural holistic wellness products including sea moss, aromatherapy, and wellness shots. Discover balance for mind, body, and spirit.">
+    <meta name="keywords" content="holistic wellness, natural health, sea moss, aromatherapy, wellness shots, mind body spirit, natural remedies">
+    <title>Nur Wellness Co. - Natural Holistic Wellness for Mind, Body & Spirit</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-emerald bg-ivory">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-ivory/95 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="text-2xl md:text-3xl font-heading font-bold text-emerald tracking-tight">
+                Nur Wellness Co.
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex items-center space-x-8 font-medium text-emerald">
+                <li><a href="#philosophy" class="hover:text-gold transition-colors">Philosophy</a></li>
+                <li><a href="#products" class="hover:text-gold transition-colors">Products</a></li>
+                <li><a href="#lifestyle" class="hover:text-gold transition-colors">Lifestyle</a></li>
+                <li><a href="#community" class="hover:text-gold transition-colors">Community</a></li>
+                <li><a href="#about" class="hover:text-gold transition-colors">About</a></li>
+            </ul>
+            
+            <!-- Shop Now Button (Desktop) -->
+            <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="hidden md:block btn-primary">
+                Shop Now
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden text-emerald focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-ivory border-t border-emerald/10">
+            <ul class="px-4 py-6 space-y-4 font-medium text-emerald">
+                <li><a href="#philosophy" class="block hover:text-gold transition-colors">Philosophy</a></li>
+                <li><a href="#products" class="block hover:text-gold transition-colors">Products</a></li>
+                <li><a href="#lifestyle" class="block hover:text-gold transition-colors">Lifestyle</a></li>
+                <li><a href="#community" class="block hover:text-gold transition-colors">Community</a></li>
+                <li><a href="#about" class="block hover:text-gold transition-colors">About</a></li>
+                <li><a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block text-center">Shop Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center px-4 py-20 bg-gradient-to-b from-ivory to-emerald/5">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="font-heading text-5xl md:text-7xl font-bold text-emerald mb-6 leading-tight">
+                Your Wellness is Your Birthright
+            </h1>
+            <p class="text-xl md:text-2xl text-emerald/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Nur Wellness Co. brings you back to balance. Natural remedies for your mind, body, and spirit. Simple. Pure. Powerful.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
+                    Shop Our Products
+                </a>
+                <a href="#philosophy" class="btn-secondary btn-large">
+                    Learn Our Story
+                </a>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="mt-16 animate-bounce">
+                <svg class="w-6 h-6 mx-auto text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-emerald mb-6">
+                    What is Nur Wellness?
+                </h2>
+                <p class="text-lg md:text-xl text-emerald/80 max-w-3xl mx-auto leading-relaxed">
+                    More than products. More than a brand. Nur Wellness Co. is your return to wholeness. We believe true healing happens when your mind, body, and spirit work together in harmony.
+                </p>
+            </div>
+            
+            <!-- Three Pillars: Mind, Body, Spirit (Tabs) -->
+            <div class="max-w-5xl mx-auto">
+                <!-- Tab Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                    <button class="tab-button active" data-tab="mind">
+                        <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        <span>Mind</span>
+                    </button>
+                    <button class="tab-button" data-tab="body">
+                        <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                        <span>Body</span>
+                    </button>
+                    <button class="tab-button" data-tab="spirit">
+                        <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        <span>Spirit</span>
+                    </button>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content-wrapper">
+                    <!-- Mind Tab -->
+                    <div id="mind-tab" class="tab-content active">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <img src="https://placehold.co/600x400/044343/FDFDF6?text=Mind+Wellness" alt="Mind wellness through journaling and aromatherapy" class="rounded-lg shadow-lg w-full">
+                            <div>
+                                <h3 class="font-heading text-3xl font-semibold text-emerald mb-4">Balance Your Mind</h3>
+                                <p class="text-emerald/80 mb-4 leading-relaxed">
+                                    We champion mental and emotional well-being through mindful practices. Your thoughts shape your world, and we help you find peace through simple daily rituals.
+                                </p>
+                                <ul class="space-y-3 mb-6">
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Aromatherapy:</strong> Healing scents that help you relax and find focus</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Mindful Journaling:</strong> Clear your mind and process emotions through writing</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Community Support:</strong> Connect with others on the same wellness journey</span>
+                                    </li>
+                                </ul>
+                                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    Shop Mind Wellness
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Body Tab -->
+                    <div id="body-tab" class="tab-content">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <img src="https://placehold.co/600x400/044343/FDFDF6?text=Body+Wellness" alt="Body wellness with sea moss and natural remedies" class="rounded-lg shadow-lg w-full">
+                            <div>
+                                <h3 class="font-heading text-3xl font-semibold text-emerald mb-4">Nourish Your Body</h3>
+                                <p class="text-emerald/80 mb-4 leading-relaxed">
+                                    From nutrient-rich sea moss to revitalizing wellness shots, our products restore vitality from within using the power of nature. Your body deserves real nourishment.
+                                </p>
+                                <ul class="space-y-3 mb-6">
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Sea Moss:</strong> Packed with minerals that boost energy and gut health</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Wellness Shots:</strong> Turmeric, ginger, and lemon to fight inflammation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Natural Herbs:</strong> Whole food nutrition from plants</span>
+                                    </li>
+                                </ul>
+                                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    Shop Body Wellness
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Spirit Tab -->
+                    <div id="spirit-tab" class="tab-content">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <img src="https://placehold.co/600x400/044343/FDFDF6?text=Spirit+Wellness" alt="Spirit wellness through movement and mindfulness" class="rounded-lg shadow-lg w-full">
+                            <div>
+                                <h3 class="font-heading text-3xl font-semibold text-emerald mb-4">Elevate Your Spirit</h3>
+                                <p class="text-emerald/80 mb-4 leading-relaxed">
+                                    Reconnect to your power, peace, and purpose with daily rituals and conscious movement. Movement is medicine, and when you move with intention, you connect to something deeper.
+                                </p>
+                                <ul class="space-y-3 mb-6">
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Daily Rituals:</strong> Create sacred moments that ground you</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Conscious Movement:</strong> Yoga, strength training, and mindful exercise</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-emerald/80"><strong>Healing Aromatherapy:</strong> Essential oils that elevate your energy</span>
+                                    </li>
+                                </ul>
+                                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    Shop Spirit Wellness
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 bg-emerald/5">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-emerald mb-6">
+                    Natural Wellness Products
+                </h2>
+                <p class="text-lg md:text-xl text-emerald/80 max-w-3xl mx-auto leading-relaxed">
+                    Every product is made with love and backed by nature. Simple ingredients. Powerful results.
+                </p>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Product 1: Sea Moss -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Sea+Moss+Gel" alt="Organic sea moss gel for gut health and energy" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Sea Moss Gel</h3>
+                        <p class="text-emerald/80 mb-4">
+                            Feel better from the inside. Sea moss helps your stomach, gives you energy, and supports your immune system.
+                        </p>
+                        <a href="https://your-shopify-store.com/products/sea-moss" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Sea Moss
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Product 2: Wellness Shots -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Wellness+Shots" alt="Turmeric ginger wellness shots for inflammation" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Wellness Shots</h3>
+                        <p class="text-emerald/80 mb-4">
+                            A quick boost when you need it. Turmeric, ginger, and lemon work together to fight swelling and pain.
+                        </p>
+                        <a href="https://your-shopify-store.com/products/wellness-shots" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Wellness Shots
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Product 3: Aromatherapy -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Essential+Oils" alt="Aromatherapy essential oils for relaxation" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Aromatherapy Oils</h3>
+                        <p class="text-emerald/80 mb-4">
+                            Calm your mind instantly. Our essential oil blends help you relax, sleep better, and feel more focused.
+                        </p>
+                        <a href="https://your-shopify-store.com/products/aromatherapy" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Aromatherapy
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Product 4: Body Oils -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Body+Oils" alt="Natural body oils for skin nourishment" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Body Oils</h3>
+                        <p class="text-emerald/80 mb-4">
+                            Nourish your skin with pure, natural oils. Feel soft, smooth, and deeply moisturized.
+                        </p>
+                        <a href="https://your-shopify-store.com/products/body-oils" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Body Oils
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Product 5: Herbal Teas -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Herbal+Teas" alt="Organic herbal teas for relaxation and health" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Herbal Teas</h3>
+                        <p class="text-emerald/80 mb-4">
+                            Sip your way to wellness. Our herbal blends help you unwind and support your body naturally.
+                        </p>
+                        <a href="https://your-shopify-store.com/products/herbal-teas" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Herbal Teas
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Product 6: Bundles -->
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/044343/FDFDF6?text=Wellness+Bundles" alt="Complete wellness product bundles" class="w-full h-64 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-semibold text-emerald mb-3">Wellness Bundles</h3>
+                        <p class="text-emerald/80 mb-4">
+                            Get everything you need in one package. Save money and start your wellness journey today.
+                        </p>
+                        <a href="https://your-shopify-store.com/collections/bundles" target="_blank" rel="noopener noreferrer" class="btn-primary w-full inline-block text-center">
+                            Shop Bundles
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-emerald mb-6">
+                    The Nur Wellness Lifestyle
+                </h2>
+                <p class="text-lg md:text-xl text-emerald/80 max-w-3xl mx-auto leading-relaxed">
+                    Wellness is not a goal. It's a daily practice. See how others are living the Nur life.
+                </p>
+            </div>
+            
+            <!-- Lifestyle Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Morning+Rituals" alt="Morning wellness rituals with sea moss and meditation" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Morning Rituals</h3>
+                        <p class="text-emerald/80 text-sm">Start your day with sea moss, journaling, and gratitude.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Mindful+Movement" alt="Mindful movement and yoga practice" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Mindful Movement</h3>
+                        <p class="text-emerald/80 text-sm">Move your body with intention. Feel the difference.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Community+Connection" alt="Wellness community gathering and connection" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Community Connection</h3>
+                        <p class="text-emerald/80 text-sm">Join a community that supports your wellness journey.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Natural+Nutrition" alt="Whole food nutrition and healthy eating" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Natural Nutrition</h3>
+                        <p class="text-emerald/80 text-sm">Real food. Real energy. Real results.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Rest+Recovery" alt="Rest and recovery practices for wellness" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Rest & Recovery</h3>
+                        <p class="text-emerald/80 text-sm">Sleep well. Rest deeply. Recover fully.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-card">
+                    <img src="https://placehold.co/400x500/044343/FDFDF6?text=Self+Care" alt="Self care rituals and practices" class="w-full h-80 object-cover rounded-lg">
+                    <div class="p-4">
+                        <h3 class="font-heading text-xl font-semibold text-emerald mb-2">Self Care</h3>
+                        <p class="text-emerald/80 text-sm">You deserve to feel good. Make time for yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="community" class="py-20 px-4 bg-emerald/5">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-emerald mb-6">
+                    What Our Community Says
+                </h2>
+                <p class="text-lg md:text-xl text-emerald/80 max-w-2xl mx-auto leading-relaxed">
+                    Real people. Real results. Real wellness.
+                </p>
+            </div>
+            
+            <!-- Testimonial Slider -->
+            <div class="relative">
+                <div id="testimonial-slider" class="overflow-hidden">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 text-center">
+                            <div class="mb-6">
+                                <svg class="w-12 h-12 text-gold mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg md:text-xl text-emerald/90 mb-6 italic leading-relaxed">
+                                "I feel like a new person. The sea moss gave me energy I haven't had in years. I can finally keep up with my kids!"
+                            </p>
+                            <div class="font-semibold text-emerald">Sarah M.</div>
+                            <div class="text-sm text-emerald/60">Mother of 3</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 text-center">
+                            <div class="mb-6">
+                                <svg class="w-12 h-12 text-gold mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg md:text-xl text-emerald/90 mb-6 italic leading-relaxed">
+                                "The wellness shots are amazing! My joint pain is almost gone. I take one every morning and I feel the difference."
+                            </p>
+                            <div class="font-semibold text-emerald">Marcus J.</div>
+                            <div class="text-sm text-emerald/60">Fitness Coach</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 text-center">
+                            <div class="mb-6">
+                                <svg class="w-12 h-12 text-gold mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                            <p class="text-lg md:text-xl text-emerald/90 mb-6 italic leading-relaxed">
+                                "Nur Wellness changed my life. I sleep better, I feel calmer, and I finally understand what real wellness means."
+                            </p>
+                            <div class="font-semibold text-emerald">Aisha K.</div>
+                            <div class="text-sm text-emerald/60">Teacher</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="flex justify-center items-center gap-6 mt-8">
+                    <button id="prev-testimonial" class="text-emerald hover:text-gold transition-colors focus:outline-none" aria-label="Previous testimonial">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <div class="flex gap-2">
+                        <button class="testimonial-dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+                        <button class="testimonial-dot" data-index="1" aria-label="Go to testimonial 2"></button>
+                        <button class="testimonial-dot" data-index="2" aria-label="Go to testimonial 3"></button>
+                    </div>
+                    
+                    <button id="next-testimonial" class="text-emerald hover:text-gold transition-colors focus:outline-none" aria-label="Next testimonial">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-emerald mb-6">
+                    Our Story
+                </h2>
+            </div>
+            
+            <div class="prose prose-lg max-w-none text-emerald/80 space-y-6">
+                <p class="text-xl leading-relaxed">
+                    Nur Wellness Co. was born from a simple truth: <strong>wellness is your birthright</strong>.
+                </p>
+                <p class="leading-relaxed">
+                    We started this journey because we were tired of complicated wellness advice. We believe healing should be simple, natural, and accessible to everyone.
+                </p>
+                <p class="leading-relaxed">
+                    The word <em>Nur</em> means "light" or "divine illumination." That's what we want to bring to your life — clarity, energy, and balance.
+                </p>
+                <p class="leading-relaxed">
+                    Every product we make comes from nature. Every practice we teach is simple. Every person in our community matters.
+                </p>
+                <p class="text-xl font-semibold text-emerald leading-relaxed">
+                    You are the medicine. We're just here to remind you.
+                </p>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
+                    Start Your Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 px-4 bg-emerald text-ivory">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">
+                Ready to Feel Your Best?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Join thousands of people who have chosen natural wellness. Your journey starts today.
+            </p>
+            <a href="https://your-shopify-store.com" target="_blank" rel="noopener noreferrer" class="btn-gold btn-large">
+                Shop All Products
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald/5 py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <h3 class="font-heading text-2xl font-bold text-emerald mb-4">Nur Wellness Co.</h3>
+                    <p class="text-emerald/80 mb-4">
+                        Natural wellness for mind, body, and spirit.
+                    </p>
+                    <div class="flex gap-4">
+                        <!-- Social Media Icons (placeholders) -->
+                        <a href="#" class="text-emerald hover:text-gold transition-colors" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-emerald hover:text-gold transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-emerald hover:text-gold transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-lg font-semibold text-emerald mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-emerald/80">
+                        <li><a href="#philosophy" class="hover:text-gold transition-colors">Philosophy</a></li>
+                        <li><a href="#products" class="hover:text-gold transition-colors">Products</a></li>
+                        <li><a href="#lifestyle" class="hover:text-gold transition-colors">Lifestyle</a></li>
+                        <li><a href="#community" class="hover:text-gold transition-colors">Community</a></li>
+                        <li><a href="#about" class="hover:text-gold transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading text-lg font-semibold text-emerald mb-4">Get In Touch</h4>
+                    <ul class="space-y-2 text-emerald/80">
+                        <li>Email: <a href="mailto:hello@nurwellness.com" class="hover:text-gold transition-colors">hello@nurwellness.com</a></li>
+                        <li>Support: <a href="mailto:support@nurwellness.com" class="hover:text-gold transition-colors">support@nurwellness.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-emerald/10 pt-8 text-center text-sm text-emerald/60">
+                <p>&copy; 2025 Nur Wellness Co. All rights reserved. Wellness is your birthright.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50">
+        <!-- Chatbot Toggle Button -->
+        <button id="chatbot-toggle" class="bg-emerald text-ivory rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-emerald/90 transition-all focus:outline-none focus:ring-4 focus:ring-gold/30">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+        </button>
+        
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="hidden fixed bottom-24 right-6 w-96 max-w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col" style="height: 500px;">
+            <!-- Chat Header -->
+            <div class="bg-emerald text-ivory p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-emerald" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Nur Wellness Assistant</h4>
+                        <p class="text-xs opacity-90">Here to help you</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="text-ivory hover:text-gold transition-colors focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-ivory/30">
+                <!-- Welcome Message -->
+                <div class="flex gap-2">
+                    <div class="w-8 h-8 bg-emerald rounded-full flex-shrink-0 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-ivory" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-2xl rounded-tl-none p-3 shadow-sm max-w-[75%]">
+                        <p class="text-sm text-emerald">Hi! I'm your Nur Wellness assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="p-4 bg-white border-t border-emerald/10">
+                <form id="chat-form" class="flex gap-2">
+                    <input 
+                        type="text" 
+                        id="chat-input" 
+                        placeholder="Ask me about products, wellness tips..." 
+                        class="flex-1 px-4 py-2 border border-emerald/20 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald/30 text-emerald"
+                        autocomplete="off"
+                    />
+                    <button 
+                        type="submit" 
+                        class="bg-emerald text-ivory rounded-full px-6 py-2 hover:bg-emerald/90 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald/30 font-medium"
+                    >
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
